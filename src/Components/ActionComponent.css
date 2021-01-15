@@ -1,0 +1,69 @@
+/* 
+.sidebar-header h6{
+    padding-bottom: 30px;
+    font-size: 20px;
+ }
+ 
+ .open-btn{
+
+   float: left;
+ }
+ 
+ .section{
+
+    transition: all .5s;
+    margin-top: 63px;
+ 
+ }
+ 
+ .section h1{
+   text-align: center;
+   color: #fff;
+ }
+ 
+ .section-margin{
+   margin-left: 300px;
+ }
+ 
+ .form-row{
+   justify-content: center;
+   margin-top: 30px;
+
+ }
+ 
+ .btn-container{
+   justify-content: center;
+   margin-bottom: 30px;
+ }
+ 
+ .services{
+   justify-content: center;
+ }
+ 
+ .dateInput{
+   height: 38px;
+ }
+ 
+ .row{
+   text-align: center;
+ }
+  */
+.form-row{
+    display: flex ;
+    justify-content: center;
+
+}
+
+.form-row select{
+    margin: 10px 20px;
+    height: 40px;
+    width: 200px;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+.actionComponent h2{
+    text-align: center;
+    color: #ffffff;
+    margin: 20px;
+}

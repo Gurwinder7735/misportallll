@@ -1,0 +1,26 @@
+.login-container{
+    width: 50%;
+    max-width: 350px;
+    margin: 150px auto;
+    color: #fff;
+  
+    border-radius: 20px;
+    padding: 30px;
+    /* box-shadow: 0px 10px 90px 10px #888888; */
+  }
+  
+  
+  .login-container h1{       
+    margin-bottom: 20px;
+  }
+  
+  .login-container .login-button{
+    margin: 10px auto;
+    display: block;
+    background-color: rgb(17,161,93);
+    width: 100%;
+  }
+  
+  .login-container .form-input{
+    background-color: #fff;
+  }

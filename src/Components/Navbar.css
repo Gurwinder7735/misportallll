@@ -1,0 +1,9 @@
+.navbar{
+    padding: 20px 45px;
+}
+
+.navbar .navbar-brand{
+    font-size: 200%;
+    font-weight: 600;
+}
+
