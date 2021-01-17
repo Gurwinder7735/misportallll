@@ -7,3 +7,12 @@
     font-weight: 600;
 }
 
+.bg-light {
+
+    background-color: rgb(255, 80, 58) !important;
+    color: #fff;
+}
+
+.actionComponent{
+    color: black;
+}

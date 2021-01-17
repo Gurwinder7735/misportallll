@@ -33,7 +33,6 @@ export const setToken = (data)=>{
 }
 
 export const setPassword = (data)=>{
-    console.log('setting user');
     return {
         type: SET_PASSWORD,
         payload: data
@@ -121,7 +120,7 @@ export const setSelectedToDate = (data)=>{
 }
 
 export const handleLogin = (username,password)=>{
-    console.log('Logging In');
+    // console.log('Logging In');
     return async (dispatch) => {
 
         const data = {
@@ -135,7 +134,7 @@ export const handleLogin = (username,password)=>{
             body: queryString.stringify(data)
         };
 
-        fetch(' https://mis-api.gamesawaari.com/Auth',requestOptions).then(res=>{
+        fetch('https://mis-api.gamesawaari.com/Auth',requestOptions).then(res=>{
             return res.json();
         }).then(res=>{
             console.log('response',res.data);  
@@ -144,6 +143,14 @@ export const handleLogin = (username,password)=>{
             dispatch(setToken(res.data.Token))
 
         })
+    }
+}
+
+export const handleLogOut = () => {
+   
+    return async (dispatch) => {
+            dispatch(setToken(null))
+            dispatch(setUser(null))
     }
 }
 
@@ -160,7 +167,7 @@ export const getData = (user,token)=>{
             body: queryString.stringify(data)
         };
 
-        fetch('https://mis-api.gamesawaari.com/Urls',requestOptions)
+        fetch('https://mis-api.gamesawaari.com/Urls', requestOptions)
         .then(res=>{
             return res.json();
             // console.log('res',JSON.stringify(res))
@@ -171,4 +178,34 @@ export const getData = (user,token)=>{
     }
 }
 
+export const getTableData = (id, user, token, selectedOperator, selectedPromoter, selectedServices, selectedFromDate)=>{
+    console.log('Getting Table Data.........');
+    return async (dispatch) => {
+        const data = {
+            action: id,
+            user: 'ndoto',
+            datetime: selectedFromDate,
+            promotername: selectedPromoter,
+            operator: selectedOperator,
+            svc_name: `"${selectedServices}"`
+        }
+          const requestOptions = {
+              method: 'POST',
+              headers: {
+                  'Content-Type': 'application/x-www-form-urlencoded',
+                  'token': token
+              },
+              body: queryString.stringify(data)
+        };
+        
+        fetch('https://mis.api.gamesawaari.com/Urls', requestOptions).then(res => {
+            console.log('ResS',res);
+            return res.json()
+        }).then(res => {
+            console.log('DAATA',data);
+        }).catch(err => {
+            console.log(err);
+        })
+    }
+}
 

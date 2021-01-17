@@ -1,6 +1,10 @@
 .main{
-    flex: .8;
-    background-color: rgb(172, 152, 152,.6);
+    flex: 1;
+    margin-left: 300px;
+    /* position: absolute; */
+    background-color: rgba(0,0,0,.4);
+    height: 100vh;
+
     /* display: flex; */
     /* flex-direction: column; */
     /* justify-content: center; */

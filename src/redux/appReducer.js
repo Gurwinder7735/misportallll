@@ -19,7 +19,7 @@ const initialState = {
   token: "",
   username: "",
   password: "",
-  data: "",
+  data: null,
   tableData: "",
   selectedOperator: "",
   selectedPromoter: "",

@@ -1,12 +1,25 @@
+.wrapper-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+     background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .7)),
+     url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1052&q=80');
+     background-position: center;
+     background-attachment: fixed;
+     background-size: cover;
+}
+
 .login-container{
-    width: 50%;
+    width: 90%;
     max-width: 350px;
-    margin: 150px auto;
+    /* margin: 150px auto; */
     color: #fff;
-  
+    
     border-radius: 20px;
     padding: 30px;
     /* box-shadow: 0px 10px 90px 10px #888888; */
+    background-color: rgba(0,0,0,.3);
   }
   
   
@@ -17,10 +30,11 @@
   .login-container .login-button{
     margin: 10px auto;
     display: block;
-    background-color: rgb(17,161,93);
+    /* background-color: rgb(17,161,93); */
     width: 100%;
   }
   
   .login-container .form-input{
     background-color: #fff;
+    margin-bottom: 10px;
   }

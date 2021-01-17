@@ -48,22 +48,58 @@
    text-align: center;
  }
   */
+.actionComponent{
+
+  height: 100%;
+  background-color:rgb(236, 232, 232);
+    /* background-color: rgb(255, 80, 58,.5) !important; */
+   /* background-image: linear-gradient(rgba(256, 256, 256, 0.5), rgba(255, 255, 255, .5)),
+     url('https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=995&q=80'); */
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+ 
+}
+
 .form-row{
-    display: flex ;
-    justify-content: center;
+    /* display: flex ; */
+    /* justify-content: center; */
+    text-align: center;
+    margin-bottom: 5px;
 
 }
 
-.form-row select{
-    margin: 10px 20px;
+.form-row select,input[type=date]{
+    margin: 5px;
     height: 40px;
-    width: 200px;
-    padding: 5px;
-    border-radius: 30px;
+    width: 170px;
+    padding: 0 10px;
+    border-radius: 5px;
 }
 
 .actionComponent h2{
     text-align: center;
-    color: #ffffff;
-    margin: 20px;
+    /* color: ; */
+    padding: 20px;
 }
+
+
+.checkbox-group{
+  display: flex;
+  justify-content: center;
+}
+
+input[type=checkbox]{
+   margin-left: 5px;
+}
+
+.checkbox-group .contain{
+  /* margin-left: 5px; */
+  margin: 20px;
+}
+
+
+
+
+
+

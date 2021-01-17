@@ -15,12 +15,12 @@ function Login() {
     }
 
     return (
-        <div className="container">
+        <div className="wrapper-container">
         <div className="login-container">
            <h1>Login</h1>
             <Form onSubmit={handleLogin}>
             <Form.Group controlId="formBasicEmail">
-                <Form.Label>Email address</Form.Label>
+                <Form.Label>Username</Form.Label>
                     <Form.Control type="text" placeholder="Username" className="form-input" value={username} onChange={(e)=>dispatch(setUsername(e.target.value))}/>
 
             </Form.Group>
@@ -32,7 +32,7 @@ function Login() {
             <Form.Group controlId="formBasicCheckbox">
                 <Form.Check type="checkbox" label="Remember me" />
             </Form.Group>
-            <Button variant="primary" type="submit" className="login-button" onClick={loginHandler} >
+            <Button variant="danger" type="submit" className="login-button" onClick={loginHandler} >
                 Submit
             </Button>
             </Form>
